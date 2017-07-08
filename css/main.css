@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+}
+
+body > *:not(header):not(footer) {
+    margin: 0 1rem;
+}
+
+body > header,
+body > footer {
+    padding: 1rem;
+}
+
+body main * + * {
+    margin-top: 1em;
+}
+
+
+body * {
+    margin-bottom: 0;
+}
+body > *:first-child {
+    margin-top: 0;
+}
+
+
+*:focus {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+}
+
+/*
+    Type sizing
+    Ratio is 1.333
+*/
+h1 {
+    font-size: 3.157rem;
+}
+h2 {
+    font-size: 2.369rem;
+}
+h3 {
+    font-size: 1.777rem;
+}
+h4 {
+    font-size: 1.333em;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 0.75rem;
+}
+
+p {
+    max-width: 40rem;
+    line-height: 1.2;
+}
+
+/* Forms */
+
+input,
+textarea {
+    font-size: 1rem;
+}
+
+label {
+    display: block;
+}
+
+input:not([type="submit"]):not([type="button"]),
+textarea {
+    padding: 0.5em;
+}
+
+
+.button,
+button,
+a[role="button"],
+input[type="file"],
+input[type="submit"],
+input[type="button"] {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1em 3em;
+    border-radius: 4px;
+}
+
+
+input[disabled] {
+    cursor: not-allowed;
+}
+
+label + input,
+label + textarea,
+label + select {
+    margin-top: 0.25em;
+}
+
+select {
+    font-size: 1rem;
+    background: #fff;
+}
+
+select[multiple] {
+    min-width: 3rem;
+}
+select[multiple] option {
+    padding: 0.25em 0.5em;
+    margin: 0;
+}
+
+form p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+.form-control {
+    margin-bottom: 0.25rem;
+}
+
+[type="text"],
+[type="email"] {
+    border: 2px solid #ebebeb;
+    transition: all 250ms ease-in-out;
+}
+
+[type="text"]:focus,
+[type="email"]:focus {
+    outline: none;
+    border-color: #999;
+}
+
+/* Base for label styling */
+
+[type="checkbox"] + label,
+[type="radio"] + label {
+    position: relative;
+    margin-top: 1rem;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"] + label:before,
+[type="radio"] + label:before {
+    content: '';
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: #ebebeb;
+    border: 2px solid transparent;
+    transition: all 250ms ease-in-out;
+}
+
+[type="checkbox"]:checked + label:before {
+    background: #44C5A2;
+}
+
+/* checkmark */
+[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 11px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+      2px 0 0 white,
+      4px 0 0 white,
+      4px -2px 0 white,
+      4px -4px 0 white,
+      4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+[type="checkbox"]:focus + label:before,
+[type="radio"]:focus + label:before {
+    border-color: #999;
+}
+[type="checkbox"]:checked:focus + label:before,
+[type="radio"]:checked:focus + label:before {
+    border-color: #31967b;
+}
+
+[type="checkbox"]:unchecked:focus + label:before,
+[type="radio"]:unchecked:focus + label:before {
+    border-color: #cccccc;
+}
+
+[type="radio"] + label:before {
+    border-radius: 50%;
+}
+
+
+[type="radio"]:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 12px;
+    height: 12px;
+    background: #44C5A2;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+body {
+    color: #333;
+}
+
+a {
+    color: #31967b;
+}
+
+
+input[type="submit"],
+.button {
+    background: #44C5A2;
+    color: #FFFFFF;
+    transition: all 250ms ease-in-out;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.button:hover,
+.button:focus {
+    background: #31967b;
+    outline: none;
+    transform: scale(1.025);
+}
+
+input[type="button"] {
+    background: #ccc;
+    color: #333;
+}
+input[type="button"]:hover {
+    background: #aaa;
+}
+
+button,
+a[role="button"] {
+    background: #333;
+    color: #fff;
+}
+button:hover,
+a[role="button"]:hover {
+    background: #111;
+}
+
+code {
+    background: #eee;
+}
+
+input[disabled] {
+    background: #eee;
+}
+
+
+
+.contain {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.header {
+    border-top: 10px solid #44C5A2;
+    overflow: auto;
+}
+
+.header h1 {
+    max-width: 33rem;
+}
+
+.header p {
+    float: right;
+    max-width: 30rem;
+}
+
+.footer {
+    text-align: center;
+    color: #666;
+    background: #333;
+    padding: 4rem 0;
+    margin-top: 6rem;
+    border-top: 10px solid #44C5A2;
+}
+
+.callout {
+    background: #9ce2cf;
+    text-align: center;
+    padding: 6rem 0;
+    margin: 4rem 0;
+}
+
+.callout h2 {
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+#join:focus {
+    outline: none;
+}
+
+.input-label {
+    margin-top: 1rem;
+}
+
+
+
+
+/* mail chimp */
+
+.indicates-required span {
+    display: inline-block;
+}
+
+.mc-field-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mc-field-group {
+    margin-bottom: 2rem;
+}
