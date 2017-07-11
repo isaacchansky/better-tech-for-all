@@ -170,7 +170,7 @@ form p {
 }
 
 [type="checkbox"]:checked + label:before {
-    background: #44C5A2;
+    background: #5190a0;
 }
 
 /* checkmark */
@@ -202,7 +202,7 @@ form p {
 [type="radio"]:checked:focus + label:before,
 [type="checkbox"]:checked:hover + label:before,
 [type="radio"]:checked:hover + label:before {
-    border-color: #31967b;
+    border-color: #3b6873;
 }
 
 [type="checkbox"]:unchecked:focus + label:before,
@@ -224,7 +224,7 @@ form p {
     left: 6px;
     width: 12px;
     height: 12px;
-    background: #44C5A2;
+    background: #5190a0;
     border-radius: 50%;
 }
 
@@ -238,13 +238,13 @@ body {
 }
 
 a {
-    color: #31967b;
+    color: #3b6873;
 }
 
 
 input[type="submit"],
 .button {
-    background: #44C5A2;
+    background: #5190a0;
     color: #FFFFFF;
     transition: all 250ms ease-in-out;
 }
@@ -252,7 +252,7 @@ input[type="submit"]:hover,
 input[type="submit"]:focus,
 .button:hover,
 .button:focus {
-    background: #31967b;
+    background: #3b6873;
     outline: none;
     transform: scale(1.025);
 }
@@ -291,7 +291,7 @@ input[disabled] {
 }
 
 .header {
-    border-top: 10px solid #44C5A2;
+    border-top: 10px solid #5190a0;
     overflow: auto;
     position: relative;
 }
@@ -315,11 +315,11 @@ input[disabled] {
     background: #333;
     padding: 4rem 0;
     margin-top: 6rem;
-    border-top: 10px solid #44C5A2;
+    border-top: 10px solid #5190a0;
 }
 
 .callout {
-    background: #9ce2cf;
+    background: #9cd7e2;
     text-align: center;
     padding: 6rem 0;
     margin: 4rem 0;
