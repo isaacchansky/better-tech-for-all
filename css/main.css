@@ -157,11 +157,13 @@ form p {
 [type="checkbox"] + label:before,
 [type="radio"] + label:before {
     content: '';
-    margin-right: 5px;
+    margin-right: 10px;
     display: inline-block;
     vertical-align: middle;
     width: 20px;
     height: 20px;
+    position: relative;
+    top: -2px;
     background: #ebebeb;
     border: 2px solid transparent;
     transition: all 250ms ease-in-out;
@@ -176,7 +178,7 @@ form p {
     content: '';
     position: absolute;
     left: 7px;
-    top: 11px;
+    top: 9px;
     background: white;
     width: 2px;
     height: 2px;
@@ -212,7 +214,7 @@ form p {
 [type="radio"]:checked + label:after {
     content: '';
     position: absolute;
-    top: 6px;
+    top: 4px;
     left: 6px;
     width: 12px;
     height: 12px;
@@ -285,6 +287,7 @@ input[disabled] {
 .header {
     border-top: 10px solid #44C5A2;
     overflow: auto;
+    position: relative;
 }
 
 .header h1 {
@@ -294,6 +297,10 @@ input[disabled] {
 .header p {
     float: right;
     max-width: 30rem;
+}
+
+.header svg {
+    position: absolute;
 }
 
 .footer {
@@ -342,3 +349,4 @@ input[disabled] {
 .mc-field-group {
     margin-bottom: 2rem;
 }
+
