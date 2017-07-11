@@ -57,6 +57,15 @@ h6 {
     font-size: 0.75rem;
 }
 
+@media screen and (max-width: 40rem) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 p {
     max-width: 40rem;
     line-height: 1.7;
