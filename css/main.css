@@ -193,16 +193,22 @@ form p {
 }
 
 [type="checkbox"]:focus + label:before,
-[type="radio"]:focus + label:before {
+[type="radio"]:focus + label:before,
+[type="checkbox"]:hover + label:before,
+[type="radio"]:hover + label:before {
     border-color: #999;
 }
 [type="checkbox"]:checked:focus + label:before,
-[type="radio"]:checked:focus + label:before {
+[type="radio"]:checked:focus + label:before,
+[type="checkbox"]:checked:hover + label:before,
+[type="radio"]:checked:hover + label:before {
     border-color: #31967b;
 }
 
 [type="checkbox"]:unchecked:focus + label:before,
-[type="radio"]:unchecked:focus + label:before {
+[type="radio"]:unchecked:focus + label:before,
+[type="checkbox"]:unchecked:hover + label:before,
+[type="radio"]:unchecked:hover + label:before {
     border-color: #cccccc;
 }
 
